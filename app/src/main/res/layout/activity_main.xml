@@ -78,7 +78,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
@@ -87,7 +87,7 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:src="@drawable/palm_tree" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
@@ -95,8 +95,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
-                                    android:text="WISATA"
-                                    android:textSize="12sp" />
+                                    android:text="Wisata"
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -114,7 +114,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
@@ -123,16 +123,18 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:src="@drawable/bus_trip" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-5dp"
                                     android:layout_marginTop="5dp"
+                                    android:layout_marginRight="-5dp"
                                     android:layout_weight="1"
-                                    android:text="WISATA"
-                                    android:textSize="12sp" />
+                                    android:text="Paket Wisata"
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -150,7 +152,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
@@ -159,7 +161,7 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:src="@drawable/cullinary" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
@@ -167,8 +169,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
-                                    android:text="WISATA"
-                                    android:textSize="12sp" />
+                                    android:text="Kuliner"
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -186,7 +188,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
@@ -195,7 +197,7 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:src="@drawable/akomodasi" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
@@ -203,8 +205,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
-                                    android:text="WISATA"
-                                    android:textSize="12sp" />
+                                    android:text="Akomodasi"
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -229,7 +231,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
@@ -247,7 +249,7 @@
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
                                     android:text="WISATA"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -264,7 +266,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
@@ -282,7 +284,7 @@
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
                                     android:text="WISATA"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -291,6 +293,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
+                            android:padding="5dp"
                             app:cardCornerRadius="10dp"
                             app:cardPreventCornerOverlap="true">
 
@@ -299,7 +302,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
@@ -317,7 +320,7 @@
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
                                     android:text="Akun"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -335,7 +338,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="15dp">
+                                android:padding="5dp">
 
                                 <ImageView
                                     android:id="@+id/img_menu1"
