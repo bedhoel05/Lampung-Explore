@@ -81,7 +81,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_wisata"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -90,7 +90,7 @@
                                     android:src="@drawable/palm_tree" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_menu_wisata"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -117,7 +117,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_paketwisata"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -126,7 +126,7 @@
                                     android:src="@drawable/bus_trip" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_paket_wisata"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="-5dp"
@@ -155,7 +155,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_kuliner"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -164,7 +164,7 @@
                                     android:src="@drawable/cullinary" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_kuliner"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -191,7 +191,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_akomodasi"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -200,7 +200,7 @@
                                     android:src="@drawable/akomodasi" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_akomodasi"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -234,7 +234,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_informasi"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -244,7 +244,7 @@
                                     android:src="@drawable/callendar" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_informasi"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -270,7 +270,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_sosial_media"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -279,7 +279,7 @@
                                     android:src="@drawable/sosmed" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_sosialmedia"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -306,7 +306,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_akunsaya"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -315,7 +315,7 @@
                                     android:src="@drawable/account" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_akunsaya"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -342,7 +342,7 @@
                                 android:padding="5dp">
 
                                 <ImageView
-                                    android:id="@+id/img_menu1"
+                                    android:id="@+id/img_about"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -351,7 +351,7 @@
                                     android:src="@drawable/info" />
 
                                 <TextView
-                                    android:id="@+id/txt_menu1"
+                                    android:id="@+id/txt_about"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -438,7 +438,6 @@
                         android:padding="10dp">
 
                         <TextView
-                            android:id="@+id/textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Pantai Marina"
@@ -476,7 +475,7 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView3"
+                                android:id="@+id/txt_wilayah"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Wilayah"
@@ -500,7 +499,6 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Suhu"
@@ -508,7 +506,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/txt_suhu"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="24 - 30 C"
@@ -524,7 +522,6 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Kelembapan"
@@ -532,7 +529,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/txt_kelembapan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="75 - 90"
@@ -556,7 +553,6 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Pagi"
@@ -564,7 +560,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/txt_cuaca_pagi"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Cerah"
@@ -580,7 +576,6 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Siang"
@@ -588,7 +583,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/txt_cuaca_siang"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Berawan"
@@ -612,7 +607,6 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Malam"
@@ -620,7 +614,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/txt_cuaca_malam"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Cerah"
@@ -636,7 +630,6 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Dini Hari"
@@ -644,7 +637,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/txt_cuaca_dini_hari"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Hujan"
