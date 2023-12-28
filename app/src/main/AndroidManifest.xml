@@ -13,6 +13,9 @@
         android:theme="@style/Theme.VisitingLampung"
         tools:targetApi="31">
         <activity
+            android:name=".akomodasi.mainAkomodasi"
+            android:exported="false" />
+        <activity
             android:name=".informasi.detailInformasi"
             android:exported="false" />
         <activity
