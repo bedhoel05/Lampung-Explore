@@ -411,7 +411,6 @@
                         android:padding="10dp">
 
                         <TextView
-                            android:id="@+id/textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="10 Destinasi Pilihan"
@@ -438,6 +437,7 @@
                         android:padding="10dp">
 
                         <TextView
+                            android:id="@+id/txt_pilihan_wisata"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Pantai Marina"
@@ -659,16 +659,14 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Versi Aplikasi" />
 
                 <TextView
-                    android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1.0.0"
+                    android:text="@string/app_ver"
                     android:textStyle="bold|italic" />
             </LinearLayout>
 
