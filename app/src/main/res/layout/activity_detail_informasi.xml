@@ -108,7 +108,6 @@
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/Sansation_Bold"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="Sorotan Dunia ke Bayi  Badak di Taman Nasional  Way Kambas"
