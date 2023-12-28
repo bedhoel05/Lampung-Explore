@@ -240,7 +240,8 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:padding="7dp"
+                                    android:src="@drawable/callendar" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
@@ -248,7 +249,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
-                                    android:text="WISATA"
+                                    android:text="Informasi"
                                     android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
@@ -275,7 +276,7 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:src="@drawable/sosmed" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
@@ -283,7 +284,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
-                                    android:text="WISATA"
+                                    android:text="Sosial Media"
                                     android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
@@ -311,7 +312,7 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:src="@drawable/account" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
@@ -319,7 +320,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
-                                    android:text="Akun"
+                                    android:text="Akun Saya"
                                     android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
@@ -347,7 +348,7 @@
                                     android:layout_weight="1"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="true"
-                                    android:src="@drawable/logo_app" />
+                                    android:src="@drawable/info" />
 
                                 <TextView
                                     android:id="@+id/txt_menu1"
