@@ -49,7 +49,7 @@
             android:hint="Username">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_reg_nama"
+                android:id="@+id/et_reg_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/account"
@@ -91,7 +91,7 @@
             android:hint="Password">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_password"
+                android:id="@+id/et_reg_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/lock"

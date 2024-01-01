@@ -1,11 +1,19 @@
 package com.example.visitinglampung;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.w3c.dom.Text;
 
@@ -13,6 +21,8 @@ public class loginActivity extends AppCompatActivity {
 
     Button btn_login;
     TextView txt_to_register, txt_forgot_pass;
+    EditText et_user, et_pass;
+    FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +32,23 @@ public class loginActivity extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_login);
         txt_forgot_pass = findViewById(R.id.txt_forgotPassword);
         txt_to_register = findViewById(R.id.txt_to_register);
+        et_user = findViewById(R.id.et_login_username);
+        et_pass = findViewById(R.id.et_login_password);
+        firebaseAuth = firebaseAuth.getInstance();
 
         btn_login.setOnClickListener(v-> {
-            Intent goLogin = new Intent(loginActivity.this, successActivity.class);
-            goLogin.putExtra("namaActiity", "Login");
-            startActivity(goLogin);
+            firebaseAuth.signInWithEmailAndPassword(et_user.getText().toString(),et_pass.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if(task.isSuccessful()){
+                        Intent goLogin = new Intent(loginActivity.this, successActivity.class);
+                        goLogin.putExtra("namaActiity", "Login");
+                        startActivity(goLogin);
+                    }else{
+                        Toast.makeText(loginActivity.this,task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
         });
 
         txt_to_register.setOnClickListener(v-> {

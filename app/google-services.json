@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001340026536",
+    "project_id": "lampung-explore",
+    "storage_bucket": "lampung-explore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001340026536:android:3beb942c2ae3be9c558c9d",
+        "android_client_info": {
+          "package_name": "com.example.visitinglampung"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq6UK3xI292tcA-wG9LsRMWPpHzZqvr5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
