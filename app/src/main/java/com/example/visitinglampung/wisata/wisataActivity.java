@@ -21,16 +21,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class wisataActivity extends AppCompatActivity {
 
-    private DatabaseReference reference;
-    ArrayList<dataWisata> list;
-    adapterWisata adapter;
-
-    private RecyclerView mRecycler;
-    private LinearLayoutManager mManager;
+    private RecyclerView recyclerView;
+    private wisataAdapter adapter;
+    private ArrayList<dataWisata> wisataArrayList;
 
 //    CardView cardWisata
     CardView cardToDashboard;
@@ -40,33 +41,22 @@ public class wisataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata);
 
-        mRecycler = findViewById(R.id.recyclerWisata);
-        mRecycler.setHasFixedSize(true);
+        String jsonData =
+                "[{'nama':'Pantai Pahawang','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'Rp. 10.000'}," +
+                        "{'nama':'Pantai Marina','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'Rp. 10.000'}," +
+                        "{'nama':'Pantai Sari Ringgung','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'Rp. 10.000'}," +
+                        "{'nama':'Pantai Kedu Warna','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'Rp. 10.000'}," +
+                        "{'nama':'Pantai Mutun','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'Rp. 10.000'}]";
 
-        mManager = new LinearLayoutManager(this);
-        mManager.setReverseLayout(true);
-        mManager.setStackFromEnd(true);
-        mRecycler.setLayoutManager(mManager);
+        setData(jsonData);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("wisata");
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                list = new ArrayList<>();
-                for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
-                    dataWisata wisata = dataSnapshot1.getValue(dataWisata.class);
-                    list.add(wisata);
-                }
-                adapter = new adapterWisata(getApplicationContext(), list);
-                mRecycler.setAdapter(adapter);
-            }
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerWisata);
+        adapter = new wisataAdapter(wisataArrayList);
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getApplicationContext(), "Terjadi Kesalahan: " + error.getMessage(), Toast.LENGTH_LONG).show();
-                Log.e("FirebaseError", "Firebase error: " + error.getMessage());
-            }
-        });
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(wisataActivity.this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+
 
 
 //        Code Intent
@@ -82,5 +72,25 @@ public class wisataActivity extends AppCompatActivity {
             Intent goDashboard = new Intent(wisataActivity.this, MainActivity.class);
             startActivity(goDashboard);
         });
+    }
+
+    void setData(String jsonString) {
+        try {
+            JSONArray jsonArray= new JSONArray(jsonString);
+            wisataArrayList = new ArrayList<>();
+            for (int i=0; i<jsonArray.length(); i++){
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                dataWisata wisata = new dataWisata
+                        (jsonObject.getString("nama"),
+                                jsonObject.getString("jam_buka"),
+                                jsonObject.getString("jam_tutup"),
+                                jsonObject.getString("rating"),
+                                jsonObject.getString("tiket"));
+
+                wisataArrayList.add(wisata);
+            }
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
     }
 }
