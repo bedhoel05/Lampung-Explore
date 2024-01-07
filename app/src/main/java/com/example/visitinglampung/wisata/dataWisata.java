@@ -11,7 +11,6 @@ public class dataWisata {
         this.tiket = tiket;
     }
 
-
     public String getNama() {
         return nama;
     }

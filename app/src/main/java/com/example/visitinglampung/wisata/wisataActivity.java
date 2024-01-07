@@ -57,22 +57,15 @@ public class wisataActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
 
-
-
 //        Code Intent
-//        cardWisata = findViewById(R.id.card_Wisata);
         cardToDashboard = findViewById(R.id.card_wisata_back_to_main);
-
-//        cardWisata.setOnClickListener(v->{
-//            Intent goWisata = new Intent(wisataActivity.this, detailWisataActivity.class);
-//            startActivity(goWisata);
-//        });
-
         cardToDashboard.setOnClickListener(v->{
             Intent goDashboard = new Intent(wisataActivity.this, MainActivity.class);
             startActivity(goDashboard);
         });
     }
+
+
 
     void setData(String jsonString) {
         try {

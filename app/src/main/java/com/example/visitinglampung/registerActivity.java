@@ -1,27 +1,14 @@
 package com.example.visitinglampung;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class registerActivity extends AppCompatActivity {
 
     Button btn_register;
     TextView txt_login, txt_user, txt_mail, txt_pass;
-    FirebaseAuth firebaseAuth;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,16 +33,16 @@ public class registerActivity extends AppCompatActivity {
 //                @Override
 //                public void onComplete(@NonNull Task<AuthResult> task) {
 //                    Toast.makeText(registerActivity.this, task.toString(), Toast.LENGTH_SHORT).show();
-////                    if(task.isSuccessful()) {
-////                        Toast.makeText(registerActivity.this, "nathan gagal", Toast.LENGTH_SHORT).show();
-//////                        Toast.makeText(registerActivity.this, "Registered successfully", Toast.LENGTH_LONG).show();
-//////                        Intent goRegister = new Intent(registerActivity.this, successActivity.class);
-//////                        goRegister.putExtra("namaActiity", "Register");
-//////                        startActivity(goRegister);
-////                    }else{
-////                        Toast.makeText(registerActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
-////                        Toast.makeText(registerActivity.this, "regist gagal", Toast.LENGTH_SHORT).show();
-////                    }
+//                    if(task.isSuccessful()) {
+//                       Toast.makeText(registerActivity.this, "nathan gagal", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(registerActivity.this, "Registered successfully", Toast.LENGTH_LONG).show();
+//                        Intent goRegister = new Intent(registerActivity.this, successActivity.class);
+//                        goRegister.putExtra("namaActiity", "Register");
+//                        startActivity(goRegister);
+//                    }else{
+//                        Toast.makeText(registerActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+//                        Toast.makeText(registerActivity.this, "regist gagal", Toast.LENGTH_SHORT).show();
+//                    }
 //                }
 //            });
 //        });
