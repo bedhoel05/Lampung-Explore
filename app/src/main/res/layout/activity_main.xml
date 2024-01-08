@@ -43,7 +43,8 @@
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
-                    android:src="@drawable/logo_app_lpg" />
+                    android:src="@drawable/logo_app_lpg"
+                    app:srcCompat="@drawable/logo" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView

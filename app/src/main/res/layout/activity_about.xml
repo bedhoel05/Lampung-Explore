@@ -19,11 +19,12 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_width="257dp"
+            android:layout_height="156dp"
             android:layout_margin="35dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/logo_app" />
+            android:src="@drawable/logo_app"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/txt_about_to_home"

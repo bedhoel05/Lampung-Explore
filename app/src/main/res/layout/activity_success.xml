@@ -23,7 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/logo_app" />
+            android:src="@drawable/logo_app"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/txt_success_activity"

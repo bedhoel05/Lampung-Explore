@@ -23,7 +23,8 @@
             android:layout_margin="30dp"
             android:adjustViewBounds="true"
             android:padding="15dp"
-            android:src="@drawable/logo_app" />
+            android:src="@drawable/logo_app"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/textView2"
