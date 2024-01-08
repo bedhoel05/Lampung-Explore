@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.visitinglampung.R;
+import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,20 +47,8 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
         wisataViewHolder.tiket.setText(dataList.get(position).getTiket());
 //        wisataViewHolder.image.setText(dataList.get(position).getImage());
 
-//        String imageUrl = dataList.get(position).getImage(); // Ganti ini dengan cara mengambil URL gambar dari objek dataWisata Anda
-//        try {
-//            URL url = new URL(imageUrl);
-//            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//            connection.setDoInput(true);
-//            connection.connect();
-//            InputStream input = connection.getInputStream();
-//            Bitmap bitmap = BitmapFactory.decodeStream(input);
-//
-//            // Menampilkan gambar ke dalam ImageView
-//            wisataViewHolder.image.setImageBitmap(bitmap); // Ganti imageView dengan nama ImageView Anda
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        String imageUrl = dataList.get(position).getImage();
+        Picasso.get().load(imageUrl).into(wisataViewHolder.image);
 
 
 //        Intent untuk ke detail wisata

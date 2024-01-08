@@ -3,15 +3,16 @@ package com.example.visitinglampung.wisata;
 public class dataWisata {
     private String nama, jam_buka, jam_tutup, rating, tiket, image;
 
-    public dataWisata(String nama, String jamBuka, String jamTutup, String rating, String tiket, String Image) {
+    public dataWisata(String nama, String jam_buka, String jam_tutup, String rating, String tiket, String image) {
         this.nama = nama;
-        this.jam_buka = jamBuka;
-        this.jam_tutup = jamTutup;
+        this.jam_buka = jam_buka;
+        this.jam_tutup = jam_tutup;
         this.rating = rating;
         this.tiket = tiket;
         this.image = image;
     }
 
+    // Metode getter dan setter untuk atribut image
     public void setImage(String image) {
         this.image = image;
     }

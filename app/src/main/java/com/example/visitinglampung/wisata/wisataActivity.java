@@ -42,15 +42,11 @@ public class wisataActivity extends AppCompatActivity {
 
 //    CardView cardWisata
     CardView cardToDashboard;
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
-    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata);
-
-
 
         String jsonData =
                 "[{'nama':'Pantai Pahawang','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://img.inews.co.id/media/1200/files/inews_new/2022/07/06/Pantai_Marina_Kalianda.jpg'}," +
@@ -67,35 +63,6 @@ public class wisataActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(wisataActivity.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
-
-//        Firebase
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("wisata"); // Ganti dengan nama node Anda di database
-
-        // Mengambil data dari Realtime Database
-//        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-//                    String nama = snapshot.child("nama").getValue(String.class);
-//                    String jamBuka = snapshot.child("jam_buka").getValue(String.class);
-//                    String jamTutup = snapshot.child("jam_tutup").getValue(String.class);
-//                    String rating = snapshot.child("rating").getValue(String.class);
-//                    String tiket = snapshot.child("tiket").getValue(String.class);
-//
-//                    // Membuat objek dataWisata dari data Realtime Database
-//                    dataWisata wisata = new dataWisata(nama, jamBuka, jamTutup, rating, tiket);
-//                    wisataArrayList.add(wisata);
-//                }
-//
-//                // Memberitahu adapter bahwa data telah berubah
-//                adapter.notifyDataSetChanged();
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//                Log.d(TAG, "Error: " + databaseError.getMessage());
-//            }
-//        });
 
 //        Code Intent
         cardToDashboard = findViewById(R.id.card_wisata_back_to_main);

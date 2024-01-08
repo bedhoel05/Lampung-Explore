@@ -37,18 +37,21 @@ public class loginActivity extends AppCompatActivity {
         firebaseAuth = firebaseAuth.getInstance();
 
         btn_login.setOnClickListener(v-> {
-            firebaseAuth.signInWithEmailAndPassword(et_user.getText().toString(),et_pass.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(task.isSuccessful()){
-                        Intent goLogin = new Intent(loginActivity.this, successActivity.class);
-                        goLogin.putExtra("namaActiity", "Login");
-                        startActivity(goLogin);
-                    }else{
-                        Toast.makeText(loginActivity.this,task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                }
-            });
+            Intent goRegister = new Intent(loginActivity.this, successActivity.class);
+            goRegister.putExtra("namaActiity", "Login");
+            startActivity(goRegister);
+//            firebaseAuth.signInWithEmailAndPassword(et_user.getText().toString(),et_pass.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                @Override
+//                public void onComplete(@NonNull Task<AuthResult> task) {
+//                    if(task.isSuccessful()){
+//                        Intent goLogin = new Intent(loginActivity.this, successActivity.class);
+//                        goLogin.putExtra("namaActiity", "Login");
+//                        startActivity(goLogin);
+//                    }else{
+//                        Toast.makeText(loginActivity.this,task.getException().getMessage(), Toast.LENGTH_LONG).show();
+//                    }
+//                }
+//            });
         });
 
         txt_to_register.setOnClickListener(v-> {
