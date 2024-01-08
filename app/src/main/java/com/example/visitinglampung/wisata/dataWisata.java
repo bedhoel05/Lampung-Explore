@@ -1,14 +1,23 @@
 package com.example.visitinglampung.wisata;
 
 public class dataWisata {
-    private String nama, jam_buka, jam_tutup, rating, tiket;
+    private String nama, jam_buka, jam_tutup, rating, tiket, image;
 
-    public dataWisata(String nama, String jamBuka, String jamTutup, String rating, String tiket) {
+    public dataWisata(String nama, String jamBuka, String jamTutup, String rating, String tiket, String Image) {
         this.nama = nama;
         this.jam_buka = jamBuka;
         this.jam_tutup = jamTutup;
         this.rating = rating;
         this.tiket = tiket;
+        this.image = image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
     }
 
     public String getNama() {
@@ -28,7 +37,7 @@ public class dataWisata {
     }
 
     public String getTiket() {
-        return tiket;
+        return "Rp. "+tiket+"/Orang";
     }
 
     public void setNama(String nama) {

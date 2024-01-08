@@ -2,6 +2,8 @@ package com.example.visitinglampung.wisata;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,11 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.visitinglampung.R;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataViewHolder> {
@@ -36,6 +43,22 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
         wisataViewHolder.jam_tutup.setText(dataList.get(position).getJam_tutup());
         wisataViewHolder.rating.setText(dataList.get(position).getRating());
         wisataViewHolder.tiket.setText(dataList.get(position).getTiket());
+//        wisataViewHolder.image.setText(dataList.get(position).getImage());
+
+        String imageUrl = dataList.get(position).getImage(); // Ganti ini dengan cara mengambil URL gambar dari objek dataWisata Anda
+        try {
+            URL url = new URL(imageUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap bitmap = BitmapFactory.decodeStream(input);
+
+            // Menampilkan gambar ke dalam ImageView
+            wisataViewHolder.image.setText(dataList.get(position).getImage()); // Ganti imageView dengan nama ImageView Anda
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
 //        Intent untuk ke detail wisata
@@ -63,7 +86,7 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
 
 
     public static class wisataViewHolder extends RecyclerView.ViewHolder {
-        private final TextView nama, jam_buka, jam_tutup, rating, tiket;
+        private final TextView nama, jam_buka, jam_tutup, rating, tiket, image;
         private final CardView parentLayout;
 
         public wisataViewHolder (@NonNull View itemView){
@@ -74,6 +97,7 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
             jam_tutup = itemView.findViewById(R.id.txt_list_wisata_jamTutup);
             rating = itemView.findViewById(R.id.txt_list_wisata_rating);
             tiket = itemView.findViewById(R.id.txt_list_wisata_tikcet);
+            image = itemView.findViewById(R.id.txt_list_wisata_tikcet);
 
 //            Deklarasi cardview untuk intent
             parentLayout = itemView.findViewById(R.id.card_Wisata);
