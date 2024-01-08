@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -45,20 +46,20 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
         wisataViewHolder.tiket.setText(dataList.get(position).getTiket());
 //        wisataViewHolder.image.setText(dataList.get(position).getImage());
 
-        String imageUrl = dataList.get(position).getImage(); // Ganti ini dengan cara mengambil URL gambar dari objek dataWisata Anda
-        try {
-            URL url = new URL(imageUrl);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap bitmap = BitmapFactory.decodeStream(input);
-
-            // Menampilkan gambar ke dalam ImageView
-            wisataViewHolder.image.setText(dataList.get(position).getImage()); // Ganti imageView dengan nama ImageView Anda
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        String imageUrl = dataList.get(position).getImage(); // Ganti ini dengan cara mengambil URL gambar dari objek dataWisata Anda
+//        try {
+//            URL url = new URL(imageUrl);
+//            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+//            connection.setDoInput(true);
+//            connection.connect();
+//            InputStream input = connection.getInputStream();
+//            Bitmap bitmap = BitmapFactory.decodeStream(input);
+//
+//            // Menampilkan gambar ke dalam ImageView
+//            wisataViewHolder.image.setImageBitmap(bitmap); // Ganti imageView dengan nama ImageView Anda
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
 //        Intent untuk ke detail wisata
@@ -79,6 +80,8 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
 
     }
 
+
+
     @Override
     public int getItemCount() {
         return (dataList != null) ? dataList.size():0;
@@ -86,7 +89,8 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
 
 
     public static class wisataViewHolder extends RecyclerView.ViewHolder {
-        private final TextView nama, jam_buka, jam_tutup, rating, tiket, image;
+        private final TextView nama, jam_buka, jam_tutup, rating, tiket;
+        private final ImageView image;
         private final CardView parentLayout;
 
         public wisataViewHolder (@NonNull View itemView){
@@ -97,7 +101,7 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
             jam_tutup = itemView.findViewById(R.id.txt_list_wisata_jamTutup);
             rating = itemView.findViewById(R.id.txt_list_wisata_rating);
             tiket = itemView.findViewById(R.id.txt_list_wisata_tikcet);
-            image = itemView.findViewById(R.id.txt_list_wisata_tikcet);
+            image = itemView.findViewById(R.id.img_list_wisata);
 
 //            Deklarasi cardview untuk intent
             parentLayout = itemView.findViewById(R.id.card_Wisata);
