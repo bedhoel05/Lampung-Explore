@@ -59,6 +59,10 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
 
                 intent.putExtra("nama_wisata", dataList.get(position).getNama());
                 intent.putExtra("jam_buka", dataList.get(position).getJam_buka());
+                intent.putExtra("jam_tutup", dataList.get(position).getJam_tutup());
+                intent.putExtra("rating", dataList.get(position).getRating());
+                intent.putExtra("tiket", dataList.get(position).getTiket());
+                intent.putExtra("image", dataList.get(position).getImage());
 
                 v.getContext().startActivity(intent);
 

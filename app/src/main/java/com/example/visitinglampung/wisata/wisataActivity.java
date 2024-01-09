@@ -49,11 +49,13 @@ public class wisataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wisata);
 
         String jsonData =
-                "[{'nama':'Pantai Pahawang','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://img.inews.co.id/media/1200/files/inews_new/2022/07/06/Pantai_Marina_Kalianda.jpg'}," +
+                "[{'nama':'Pantai Pahawang','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://infolpg.com/wp-content/uploads/2018/06/penginapan-pulau-pahawang.jpg'}," +
                         "{'nama':'Pantai Marina','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://img.inews.co.id/media/1200/files/inews_new/2022/07/06/Pantai_Marina_Kalianda.jpg'}," +
-                        "{'nama':'Pantai Sari Ringgung','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://img.inews.co.id/media/1200/files/inews_new/2022/07/06/Pantai_Marina_Kalianda.jpg'}," +
-                        "{'nama':'Pantai Kedu Warna','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://img.inews.co.id/media/1200/files/inews_new/2022/07/06/Pantai_Marina_Kalianda.jpg'}," +
-                        "{'nama':'Pantai Mutun','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://img.inews.co.id/media/1200/files/inews_new/2022/07/06/Pantai_Marina_Kalianda.jpg'}]";
+                        "{'nama':'Pantai Sari Ringgung','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://www.konteks.co.id/wp-content/uploads/2023/02/Pantai-Sari-Ringgung-Lampung.png'}," +
+                        "{'nama':'Pantai Sari Ringgung','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://www.konteks.co.id/wp-content/uploads/2023/02/Pantai-Sari-Ringgung-Lampung.png'}," +
+                        "{'nama':'Pantai Sari Ringgung','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://www.konteks.co.id/wp-content/uploads/2023/02/Pantai-Sari-Ringgung-Lampung.png'}," +
+                        "{'nama':'Pantai Kedu Warna','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://thumb.viva.id/vivalampung/1265x711/2022/10/25/6357623958a49-pantai-kedu-warna_lampung.jpg'}," +
+                        "{'nama':'Pantai Mutun','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','gambar':'https://radarmukomuko.disway.id/upload/08f540f43f8d4893d37673c9ee691ffd.jpg'}]";
 
         setData(jsonData);
 
@@ -86,7 +88,7 @@ public class wisataActivity extends AppCompatActivity {
                                 jsonObject.getString("jam_tutup"),
                                 jsonObject.getString("rating"),
                                 jsonObject.getString("tiket"),
-                                jsonObject.getString("image"));
+                                jsonObject.getString("gambar"));
 
                 wisataArrayList.add(wisata);
             }

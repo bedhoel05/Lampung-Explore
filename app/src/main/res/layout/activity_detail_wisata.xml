@@ -81,7 +81,7 @@
                     app:cardElevation="5dp">
 
                     <ImageView
-                        android:id="@+id/imageView10"
+                        android:id="@+id/img_detil_wisata"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:adjustViewBounds="true"
@@ -116,7 +116,7 @@
                             android:src="@drawable/star" />
 
                         <TextView
-                            android:id="@+id/textView19"
+                            android:id="@+id/txt_rating_detil_wisata"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -167,7 +167,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/deskripsi_detil_wisata"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
@@ -205,7 +205,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView21"
+                        android:id="@+id/alamat_detil_wisata"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
@@ -255,7 +255,7 @@
                             </LinearLayout>
 
                             <TextView
-                                android:id="@+id/textView25"
+                                android:id="@+id/buka_detil_wisata"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
@@ -302,7 +302,7 @@
                             </LinearLayout>
 
                             <TextView
-                                android:id="@+id/textView25"
+                                android:id="@+id/tutup_detil_wisata"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
@@ -357,7 +357,7 @@
                             </LinearLayout>
 
                             <TextView
-                                android:id="@+id/textView25"
+                                android:id="@+id/telepon_detil_wisata"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
@@ -404,7 +404,7 @@
                             </LinearLayout>
 
                             <TextView
-                                android:id="@+id/textView25"
+                                android:id="@+id/ig_detil_wisata"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
@@ -459,7 +459,7 @@
                             </LinearLayout>
 
                             <TextView
-                                android:id="@+id/textView25"
+                                android:id="@+id/web_detil_wisata"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
@@ -526,7 +526,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/textView25"
+                            android:id="@+id/tiket_dewasa_detil_wisata"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -573,7 +573,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/textView25"
+                            android:id="@+id/tiket_anak_detil_wisata"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
