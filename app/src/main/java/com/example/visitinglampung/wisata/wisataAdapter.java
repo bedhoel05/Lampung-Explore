@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.BreakIterator;
 import java.util.ArrayList;
 
 public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataViewHolder> {
@@ -63,6 +64,10 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
                 intent.putExtra("rating", dataList.get(position).getRating());
                 intent.putExtra("tiket", dataList.get(position).getTiket());
                 intent.putExtra("image", dataList.get(position).getImage());
+                intent.putExtra("telepon", dataList.get(position).getTelepon());
+                intent.putExtra("deskripsi", dataList.get(position).getDeskripsi());
+                intent.putExtra("alamat", dataList.get(position).getAlamat());
+                intent.putExtra("maps_link", dataList.get(position).getMaps_link());
 
                 v.getContext().startActivity(intent);
 

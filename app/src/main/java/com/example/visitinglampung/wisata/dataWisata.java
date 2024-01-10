@@ -1,15 +1,63 @@
 package com.example.visitinglampung.wisata;
 
 public class dataWisata {
-    private String nama, jam_buka, jam_tutup, rating, tiket, image;
+    private String nama;
+    private String jam_buka;
+    private String jam_tutup;
+    private String rating;
+    private String tiket;
+    private String image;
+    private String maps_link;
 
-    public dataWisata(String nama, String jam_buka, String jam_tutup, String rating, String tiket, String image) {
+
+    private String deskripsi;
+    private String alamat;
+    private String telepon;
+
+    public dataWisata(String nama, String jam_buka, String jam_tutup, String rating, String tiket, String image, String mapsLink, String alamat, String deskripsi, String telepon) {
         this.nama = nama;
         this.jam_buka = jam_buka;
         this.jam_tutup = jam_tutup;
         this.rating = rating;
         this.tiket = tiket;
         this.image = image;
+        this.maps_link = mapsLink;
+        this.deskripsi = deskripsi;
+        this.alamat = alamat;
+        this.telepon = telepon;
+
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getTelepon() {
+        return telepon;
+    }
+
+    public void setTelepon(String telepon) {
+        this.telepon = telepon;
+    }
+
+    public String getMaps_link() {
+        return maps_link;
+    }
+
+    public void setMaps_link(String maps_link) {
+        this.maps_link = maps_link;
     }
 
     // Metode getter dan setter untuk atribut image

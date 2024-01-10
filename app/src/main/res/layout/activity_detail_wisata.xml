@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Pantai Teluk Hantu"
+            android:text="Nama Wisata"
             android:textColor="@color/primary"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -210,7 +210,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:padding="5dp"
-                        android:text="Pantai Teluk Hantu, Pagar Jaya, Kecamatan Punduh Pidada, Kabupaten Pesawaran, Lampung Indonesia"
+                        android:text="Alamat wisata"
                         android:textColor="@color/primary"
                         android:textSize="12sp"
                         android:textStyle="normal" />
@@ -364,7 +364,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-light"
                                 android:padding="5dp"
-                                android:text="082281675460"
+                                android:text="+62857 xxxx xxxx"
                                 android:textColor="@color/primary"
                                 android:textSize="12sp"
                                 android:textStyle="normal" />
@@ -411,7 +411,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-light"
                                 android:padding="5dp"
-                                android:text="@telukhantu_lpg"
+                                android:text="instagram.wisata"
                                 android:textColor="@color/primary"
                                 android:textSize="12sp"
                                 android:textStyle="normal" />
@@ -466,7 +466,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="sans-serif-light"
                                 android:padding="5dp"
-                                android:text="telukhanti_lpg.id"
+                                android:text="web_wisata.id"
                                 android:textColor="@color/primary"
                                 android:textSize="12sp"
                                 android:textStyle="normal" />
@@ -604,6 +604,7 @@
                     android:padding="10dp">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_maps_detil_wisata"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:backgroundTint="@color/primary"
