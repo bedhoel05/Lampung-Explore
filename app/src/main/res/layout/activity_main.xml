@@ -259,6 +259,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/card_to_socmed"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
@@ -289,42 +290,6 @@
                                     android:layout_marginTop="5dp"
                                     android:layout_weight="1"
                                     android:text="Sosial Media"
-                                    android:textSize="10sp" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:padding="5dp"
-                            app:cardCornerRadius="10dp"
-                            app:cardPreventCornerOverlap="true">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="5dp">
-
-                                <ImageView
-                                    android:id="@+id/img_akunsaya"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:adjustViewBounds="true"
-                                    android:cropToPadding="true"
-                                    android:src="@drawable/account_user" />
-
-                                <TextView
-                                    android:id="@+id/txt_akunsaya"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_weight="1"
-                                    android:text="Akun Saya"
                                     android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
@@ -363,6 +328,44 @@
                                     android:text="About Me"
                                     android:textSize="10sp"
                                     android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardPreventCornerOverlap="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/img_akunsaya"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:src="@drawable/account_user" />
+
+                                <TextView
+                                    android:id="@+id/txt_akunsaya"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:text="Keluar"
+                                    android:textStyle="bold"
+                                    android:textSize="10sp" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 

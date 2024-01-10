@@ -17,7 +17,7 @@ public class detailWisataActivity extends AppCompatActivity {
 
     CardView cardToWisata, cardMaps;
 
-    TextView nama, rating, buka, tutup, tiket, deskripsi, alamat, telepon;
+    TextView nama, rating, buka, tutup, tiket, deskripsi, alamat, telepon, text_maps;
     ImageView gambar;
 
     @Override
@@ -35,6 +35,7 @@ public class detailWisataActivity extends AppCompatActivity {
         alamat = findViewById(R.id.alamat_detil_wisata);
         telepon = findViewById(R.id.telepon_detil_wisata);
         gambar = findViewById(R.id.img_detil_wisata);
+        text_maps = findViewById(R.id.btn_txt_to_maps);
         cardMaps = findViewById(R.id.card_maps_detil_wisata);
 
 
@@ -61,6 +62,8 @@ public class detailWisataActivity extends AppCompatActivity {
         telepon.setText(String.valueOf(teleponIntent));
         alamat.setText(String.valueOf(alamatIntent));
         deskripsi.setText(String.valueOf(deskripsiIntent));
+        text_maps.setText("Arahkan saya ke "+String.valueOf(namaIntent));
+
 
         Picasso.get().load(imageIntent).into(gambar);
 

@@ -44,38 +44,41 @@ public class wisataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata);
 
-        db.collection("wisata")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                // Ambil data dari setiap dokumen Firestore dan tambahkan ke ArrayList
-                                dataWisata wisata = new dataWisata(
-                                        document.getString("nama"),
-                                        document.getString("jam_buka"),
-                                        document.getString("jam_tutup"),
-                                        document.getString("rating"),
-                                        document.getString("tiket"),
-                                        document.getString("image"),
-                                        document.getString("maps_link"),
-                                        document.getString("alamat"),
-                                        document.getString("deskripsi"),
-                                        document.getString("telepon")
-                                );
+        try {
+            db.collection("wisata")
+                    .get()
+                    .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                            if (task.isSuccessful()) {
                                 wisataArrayList = new ArrayList<>();
-                                wisataArrayList.add(wisata); // Tambahkan ke ArrayList
+                                for (QueryDocumentSnapshot document : task.getResult()) {
+                                    // Ambil data dari setiap dokumen Firestore dan tambahkan ke ArrayList
+                                    dataWisata wisata = new dataWisata(
+                                            document.getString("nama"),
+                                            document.getString("jam_buka"),
+                                            document.getString("jam_tutup"),
+                                            document.getString("rating"),
+                                            document.getString("tiket"),
+                                            document.getString("image"),
+                                            document.getString("maps_link"),
+                                            document.getString("alamat"),
+                                            document.getString("deskripsi"),
+                                            document.getString("telepon")
+                                    );
+                                    wisataArrayList.add(wisata); // Tambahkan ke ArrayList
+                                }
+                                // Setelah selesai mengambil data, set adapter untuk RecyclerView
+                                adapter = new wisataAdapter(wisataArrayList);
+                                recyclerView.setAdapter(adapter);
+                            } else {
+                                Toast.makeText(wisataActivity.this, "Eror geting dokument", Toast.LENGTH_SHORT).show();
+                                Log.w(TAG, "Error getting documents.", task.getException());
                             }
-                            // Setelah selesai mengambil data, set adapter untuk RecyclerView
-                            adapter = new wisataAdapter(wisataArrayList);
-                            recyclerView.setAdapter(adapter);
-                        } else {
-                            Toast.makeText(wisataActivity.this, "Eror geting dokument", Toast.LENGTH_SHORT).show();
-                            Log.w(TAG, "Error getting documents.", task.getException());
                         }
-                    }
-                });
+                    });
+        }
+        catch ()
 
 //        String jsonData =
 //                "[{'nama':'Pantai Pahawang','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','tiket_anak':'5.000','gambar':'https://infolpg.com/wp-content/uploads/2018/06/penginapan-pulau-pahawang.jpg'}," +

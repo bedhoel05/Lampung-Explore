@@ -8,8 +8,6 @@ public class dataWisata {
     private String tiket;
     private String image;
     private String maps_link;
-
-
     private String deskripsi;
     private String alamat;
     private String telepon;
@@ -28,43 +26,12 @@ public class dataWisata {
 
     }
 
-    public String getDeskripsi() {
-        return deskripsi;
-    }
-
-    public void setDeskripsi(String deskripsi) {
-        this.deskripsi = deskripsi;
-    }
-
-    public String getAlamat() {
-        return alamat;
-    }
-
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
-    }
-
-    public String getTelepon() {
-        return telepon;
-    }
-
-    public void setTelepon(String telepon) {
-        this.telepon = telepon;
-    }
-
-    public String getMaps_link() {
-        return maps_link;
-    }
-
-    public void setMaps_link(String maps_link) {
-        this.maps_link = maps_link;
-    }
 
     // Metode getter dan setter untuk atribut image
+
     public void setImage(String image) {
         this.image = image;
     }
-
     public String getImage() {
         return image;
     }
@@ -72,7 +39,6 @@ public class dataWisata {
     public String getNama() {
         return nama;
     }
-
     public String getJam_buka() {
         return "Buka "+jam_buka;
     }
@@ -87,6 +53,26 @@ public class dataWisata {
 
     public String getTiket() {
         return "Rp. "+tiket+"/Orang";
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public String getMaps_link() {
+        return maps_link;
+    }
+
+    public String getTelepon() {
+        return telepon;
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
     }
 
     public void setNama(String nama) {
@@ -107,5 +93,17 @@ public class dataWisata {
 
     public void setTiket(String tiket) {
         this.tiket = tiket;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public void setTelepon(String telepon) {
+        this.telepon = telepon;
+    }
+
+    public void setMaps_link(String maps_link) {
+        this.maps_link = maps_link;
     }
 }

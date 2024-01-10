@@ -618,13 +618,12 @@
                             android:padding="5dp">
 
                             <TextView
-                                android:id="@+id/textView26"
+                                android:id="@+id/btn_txt_to_maps"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="15dp"
                                 android:layout_weight="20"
-
-                                android:text="ARAHKAN SAYA KE TELUK HANTU"
+                                android:text="button"
                                 android:textColor="@color/white"
                                 android:textSize="10sp" />
 
