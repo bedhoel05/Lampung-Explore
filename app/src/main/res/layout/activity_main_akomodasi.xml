@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="INFORMASI"
+            android:text="AKOMODASI"
             android:textColor="@color/primary"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -70,9 +70,10 @@
 
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerAkomodasi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:listitem="@layout/list_informasi" />
+                tools:listitem="@layout/list_akomodasi" />
 
         </LinearLayout>
     </ScrollView>

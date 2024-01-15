@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="One Day Trip Pahawang"
+            android:text="nama paket"
             android:textColor="@color/primary"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -92,7 +92,7 @@
                         app:cardElevation="10dp">
 
                         <ImageView
-                            android:id="@+id/imageView13"
+                            android:id="@+id/img_detil_paket"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -101,7 +101,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/textView"
+                        android:id="@+id/txt_detil_nama_paket"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -137,14 +137,12 @@
                         android:padding="5dp">
 
                         <ImageView
-                            android:id="@+id/imageView12"
                             android:layout_width="wrap_content"
                             android:layout_height="15dp"
                             android:adjustViewBounds="true"
                             android:src="@drawable/lock" />
 
                         <TextView
-                            android:id="@+id/textView17"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -157,7 +155,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/txt_detil_deskripsi_paket"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
@@ -175,14 +173,12 @@
                         android:padding="5dp">
 
                         <ImageView
-                            android:id="@+id/imageView12"
                             android:layout_width="wrap_content"
                             android:layout_height="15dp"
                             android:adjustViewBounds="true"
                             android:src="@drawable/lock" />
 
                         <TextView
-                            android:id="@+id/textView17"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -195,7 +191,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView21"
+                        android:id="@+id/txt_detil_fasilitas_paket"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
@@ -213,14 +209,12 @@
                         android:padding="5dp">
 
                         <ImageView
-                            android:id="@+id/imageView12"
                             android:layout_width="wrap_content"
                             android:layout_height="15dp"
                             android:adjustViewBounds="true"
                             android:src="@drawable/lock" />
 
                         <TextView
-                            android:id="@+id/textView17"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -233,7 +227,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/txt_detil_exclude_paket"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
@@ -265,14 +259,12 @@
                         android:padding="5dp">
 
                         <ImageView
-                            android:id="@+id/imageView12"
                             android:layout_width="wrap_content"
                             android:layout_height="15dp"
                             android:adjustViewBounds="true"
                             android:src="@drawable/lock" />
 
                         <TextView
-                            android:id="@+id/textView17"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -285,7 +277,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/txt_detil_destinasi_paket"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
@@ -296,6 +288,7 @@
                         android:textStyle="normal" />
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_detil_paket_kontak"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -310,7 +303,6 @@
                             android:padding="5dp">
 
                             <TextView
-                                android:id="@+id/textView26"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="15dp"
@@ -321,7 +313,6 @@
                                 android:textSize="10sp" />
 
                             <ImageView
-                                android:id="@+id/imageView14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="10dp"

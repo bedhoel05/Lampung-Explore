@@ -43,8 +43,6 @@ public class wisataActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata);
-
-        try {
             db.collection("wisata")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -77,9 +75,6 @@ public class wisataActivity extends AppCompatActivity {
                             }
                         }
                     });
-        }
-        catch ()
-
 //        String jsonData =
 //                "[{'nama':'Pantai Pahawang','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','tiket_anak':'5.000','gambar':'https://infolpg.com/wp-content/uploads/2018/06/penginapan-pulau-pahawang.jpg'}," +
 //                        "{'nama':'Pantai Marina','jam_buka':'07:00','jam_tutup':'17:00','rating':'4.5','tiket':'10.000','tiket_anak':'5.000','gambar':'https://img.inews.co.id/media/1200/files/inews_new/2022/07/06/Pantai_Marina_Kalianda.jpg'}," +

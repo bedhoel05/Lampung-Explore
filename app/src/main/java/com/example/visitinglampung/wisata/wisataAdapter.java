@@ -102,7 +102,7 @@ public class wisataAdapter extends RecyclerView.Adapter<wisataAdapter.wisataView
             image = itemView.findViewById(R.id.img_list_wisata);
 
 //            Deklarasi cardview untuk intent
-            parentLayout = itemView.findViewById(R.id.card_Wisata);
+            parentLayout = itemView.findViewById(R.id.card_list_Wisata);
 
         }
     }
